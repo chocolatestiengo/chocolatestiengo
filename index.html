@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chocolates tiengo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <style>
+        * {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.logo-icon {
+    
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Cabeçalho */
+header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #82a773;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+   
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Seção Principal */
+.main-section {
+    background-color:#D2B48C;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.main-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 18px;
+}
+
+/* Produtos */
+.produtos {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e5533d;
+}
+
+/* Contato */
+.contato {
+    background-color: #e9e9e9;
+    padding: 40px 0;
+}
+
+.contato form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contato form input, .contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contato form button {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contato form button:hover {
+    background-color: #e5533d;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            
+            <h1 class="logo">chocolates tiengo</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section class="main-section">
+        <div class="container">
+            <h2>Bem-vindo à Loja Exemplo!</h2>
+            <p>Aqui você encontra os melhores produtos com as melhores ofertas.</p>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="https://i.ibb.co/YfxbW42/Whats-App-Image-2024-07-12-at-17-58-17-1.jpg" alt="Produto 1">
+                    <h3>Nibs caramelizados.</h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                   
+                  
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="https://i.ibb.co/4mBkkFD/Whats-App-Image-2024-07-12-at-17-58-21-1.jpg" alt="Produto 2">
+                    <h3>Geleia de mel de cacau</h3>
+                    <p>R$ 149,99</p>
+                    <!--bota de compra--> 
+                   
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="https://i.ibb.co/nRDF66Y/Whats-App-Image-2024-07-12-at-18-06-51.jpg" alt="Produto 3">
+                    <h3>Bombom com ganache de café</h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                  
+                </div>
+        
+                
+            </div>
+            
+    </section>
+     <!-- Produtos -->
+     <section id="produtos" class="produtos">
+        <div class="container">
+            
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="https://i.ibb.co/pw1yVdN/Whats-App-Image-2024-07-12-at-17-58-14-1.jpg" alt="Produto 1">
+                    <h3>Creme de castanha</h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                 
+                    <!-------------->
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="https://i.ibb.co/Xpm18pc/Whats-App-Image-2024-07-12-at-17-58-05.jpg" alt="Produto 2">
+                    <h3>bombom de geleia de pimneta</h3>
+                    <p>R$ 149,99</p>
+
+                    <!--bota de compra--> 
+                
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="https://i.ibb.co/vksjCQf/Whats-App-Image-2024-07-12-at-17-58-06.jpg" alt="Produto 3">
+                    <h3>bomobm de mel de cacau</h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                  
+                </div>
+        
+            
+    </section>
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="https://i.ibb.co/zHqtFbD/Whats-App-Image-2024-07-12-at-18-06-51-1.jpg" alt="Produto 1">
+                    <h3>Bombom de geleia de cupuaçu</h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                    
+                    <!-------------->
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="https://i.ibb.co/7vRsWQf/Whats-App-Image-2024-07-12-at-17-58-22.jpg" alt="Produto 2">
+                    <h3>barra de chocolate 70%</h3>
+                    <p>R$ 149,99</p>
+                    <!--bota de compra--> 
+                    
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="https://i.ibb.co/r0MxgVf/barra-de-chocolate-68-com-cumaru-25g-670fe80b8bfac-thumb.jpg" alt="Produto 3">
+                    <h3>barra de chocolate 68% com cumaru</h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                   
+
+                </div>
+            
+            </div>
+            
+    </section>
+
+    <section id="produtos" class="produtos">
+        <div class="container">
+            
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="https://i.ibb.co/QfypwHj/Whats-App-Image-2024-07-12-at-17-58-30-1.jpg" alt="Produto 1">
+                    <h3>barra de chocolate 70% com açúcar de coco.</h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                   
+                    <!-------------->
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="https://i.ibb.co/2hzbgmQ/Whats-App-Image-2024-07-12-at-17-58-26.jpg" alt="Produto 2">
+                    <h3>Barra de chocolate 60%cacau</h3>
+                    <p>R$ 149,99</p>
+                    <!--bota de compra--> 
+                    
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="https://i.ibb.co/BTr4FKy/barra-de-chocolate-80-cacau-25g-670fefa0bcb80-thumb.jpg" alt="Produto 3">
+                    <h3>barra de chocolate 80% cacau</h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                </div>
+            
+            </div>
+            
+    </section>
+    <section id="produtos" class="produtos">
+        <div class="container">
+            
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="https://i.ibb.co/802Nr1t/barra-de-chocolate-50cacau-25g-670ff2bbd83d9-thumb.jpg" alt="Produto 1">
+                    <h3>Barra de chocolate 50%cacau</h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                   
+                    <!-------------->
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="https://i.ibb.co/bQLMWwH/barra-de-chocolate-73-com-cafe-25g-670ff50854a79-thumb.jpg" alt="Produto 2">
+                    <h3>Barra de chocolate 73% com café</h3>
+                    <p>R$ 149,99</p>
+                    <!--bota de compra--> 
+                
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="https://i.ibb.co/j3kT4Gp/Whats-App-Image-2024-07-12-at-17-58-09.jpg" alt="Produto 3">
+                    <h3>Licor de chocolate</h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                </div>
+            
+            </div>
+            
+    </section>
+    <section id="produtos" class="produtos">
+        <div class="container">
+            
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="https://i.ibb.co/3Y07mtK/Whats-App-Image-2024-07-12-at-17-58-27-1.jpg" alt="Produto 1">
+                    <h3>Barra de chocoalate com leite de coco.</h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                   
+                    <!-------------->
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="" alt="Produto 2">
+                    <h3></h3>
+                    <p>R$ 149,99</p>
+                    <!--bota de compra--> 
+                    <a href="#" class="btn"></a>
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="" alt="Produto 3">
+                    <h3></h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                </div>
+            
+            </div>
+            
+    </section>
+    <section id="produtos" class="produtos">
+        <div class="container">
+            
+            <div class="product-list">
+                <div class="product-item">
+                    <!--1-->
+                    <img src="" alt="Produto 1">
+                    <h3></h3>
+                    <p>R$ </p>
+
+                    <!--bota de compra--> 
+                    <a href="#" class="btn"></a>
+                    <!-------------->
+                </div>
+                <div class="product-item">
+                    <!--2-->
+                    <img src="" alt="Produto 2">
+                    <h3></h3>
+                    <p>R$ 149,99</p>
+                    <!--bota de compra--> 
+                    <a href="#" class="btn"></a>
+
+                </div>
+                <div class="product-item">
+                    <!--3-->
+                    <img src="" alt="Produto 3">
+                    <h3></h3>
+                    <p>R$ 79,99</p>
+                    <!--bota de compra--> 
+                </div>
+            
+            </div>
+            
+    </section>
+
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+           
+            <form>
+              <button type="submit" class="btn">WhatsApp</button>
+              <button type="submit" class="btn">instagram</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Loja Exemplo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
